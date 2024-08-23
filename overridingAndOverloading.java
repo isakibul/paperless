@@ -58,7 +58,7 @@ class Car extends Vehicle {
     }
 }
 
-public class overridingAndOverloading {
+public class OverridingAndOverloading {
     public static void main(String[] args) {
         Vehicle genericVehicle = new Vehicle("Generic Model");
         genericVehicle.startEngine();
