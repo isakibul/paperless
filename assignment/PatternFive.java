@@ -1,17 +1,28 @@
 public class PatternFive {
     public static void main(String[] args) {
-        int rows = 3;
-        int columns = 3;
+        int n = 7;
+        int max = 4;
 
-        for (int i = 1; i <= rows; i++) {
-            for (int j = 1; j <= columns; j++) {
-                if (i == 1 || i == rows || j == 1 || j == columns) {
-                    System.out.print("* ");
-                } else {
-                    System.out.print("  ");
-                }
+        /*
+         * loop through each row of the matrix
+         */
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                int value = max - Math.min(
+                    Math.min(i, j),
+                    Math.min(n - 1 - i, n - 1 - j)
+                );
+                
+                /*
+                 * print the value followed by a space
+                 */
+                System.out.print(value + " ");
             }
+            /*
+             * move to the next line after each row is printed
+             */
             System.out.println();
         }
     }
 }
+
