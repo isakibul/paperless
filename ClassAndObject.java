@@ -1,5 +1,5 @@
 // creating a class
-class Lamping {
+class Lamp {
     boolean isOn;
 
     void turnOn(){
@@ -13,10 +13,10 @@ class Lamping {
     }
 }
 
-public class Lamp{
+public class ClassAndObject{
     public static void main(String args[]){
         // creating object from the class
-        Lamping led = new Lamping();
+        Lamp led = new Lamp();
 
         led.turnOn();
         led.turnOff();
