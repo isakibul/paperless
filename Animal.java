@@ -7,7 +7,7 @@ public class Animal {
 
 class Dog extends Animal {
   public void display() {
-    System.out.println("My name is " + name);
+    System.out.println("name is " + name);
   }
 }
 
@@ -17,7 +17,6 @@ class Main {
 
     labrador.name = "Rohu";
     labrador.display();
-
     labrador.eat();
 
   }
